@@ -45,7 +45,6 @@ public class MainActivity extends Activity
 				@Override
 				public void onItemClick(AdapterView<?> p1, View p2, int p3, long p4)
 				{
-					Toast.makeText(MainActivity.this,"",0).show();
 					switch(p3)
 					{
 						case 0 :
