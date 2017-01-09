@@ -69,10 +69,11 @@
             </intent-filter>
         </activity>
         <activity android:name="com.mycompany.myapptest.RecyclerViewTestActivity" />
-        <activity android:name="com.mycompany.myapptest.easou.StartActivity" />
-        <activity android:name="com.mycompany.myapptest.easou.EasouMainActivity" />
-        <activity android:name="com.mycompany.myapptest.easou.HelpActivity" />
+        <activity android:name="com.mycompany.myapptest.standapp.StartActivity" />
+        <activity android:name="com.mycompany.myapptest.standapp.StandAppMainActivity" />
+        <activity android:name="com.mycompany.myapptest.standapp.HelpActivity" />
         <activity android:name="com.mycompany.myapptest.TextViewShowHtmlActivity" />
+        <activity android:name="com.mycompany.myapptest.OKHttpTestActivity" />
     </application>
 
 </manifest>

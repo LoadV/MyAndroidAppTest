@@ -172,16 +172,19 @@
 			android:name=".RecyclerViewTestActivity"/>
 
 		<activity
-			android:name=".easou.StartActivity"/>
+			android:name=".standapp.StartActivity"/>
 
 		<activity
-			android:name=".easou.EasouMainActivity"/>
+			android:name=".standapp.StandAppMainActivity"/>
 
 		<activity
-			android:name=".easou.HelpActivity"/>
+			android:name=".standapp.HelpActivity"/>
 
 		<activity
 			android:name=".TextViewShowHtmlActivity"/>
+
+		<activity
+			android:name=".OKHttpTestActivity"/>
 
 	</application>
 

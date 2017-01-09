@@ -24,7 +24,6 @@ public class MainActivity extends Activity
 		
 		initView();
 		
-	Toast.makeText(MainActivity.this,Environment.DIRECTORY_PODCASTS,0).show();
 		
 		List<String> items = new ArrayList<String>();
 		
@@ -32,6 +31,7 @@ public class MainActivity extends Activity
 		items.add("RecycleView Test");
 		items.add("mdzz");
 		items.add("TextView->Html");
+		items.add("OKHttp测试");
 		mListBaseAdapter = new MainListBaseAdapter(MainActivity.this, items);
 		mListBaseAdapter.notifyDataSetChanged();
 		mListBaseAdapter.notifyDataSetInvalidated();
@@ -53,12 +53,17 @@ public class MainActivity extends Activity
 							startActivity(intent);
 							break;
 						case 1 :
-							intent.setClass(MainActivity.this,com.mycompany.myapptest.easou.StartActivity.class);
+							intent.setClass(MainActivity.this,com.mycompany.myapptest.standapp.StartActivity.class);
 							startActivity(intent);
 							break;
 						case 2:
 							intent.setClass(MainActivity.this,TextViewShowHtmlActivity.class);
 							startActivity(intent);
+							break;
+						case 3 :
+							intent.setClass(MainActivity.this,OKHttpTestActivity.class);
+							startActivity(intent);
+							break;
 					}
 				}
 
@@ -70,7 +75,6 @@ public class MainActivity extends Activity
 
 	private void initView()
 	{
-		// TODO: Implement this method
 		mListView = (ListView) findViewById(R.id.mainListView);
 	}
 	
@@ -90,21 +94,18 @@ class MainListBaseAdapter extends BaseAdapter
 	@Override
 	public int getCount()
 	{
-		// TODO: Implement this method
 		return items.size();
 	}
 
 	@Override
 	public Object getItem(int p1)
 	{
-		// TODO: Implement this method
 		return items.get(p1);
 	}
 
 	@Override
 	public long getItemId(int p1)
 	{
-		// TODO: Implement this method
 		return 0;
 	}
 
