@@ -37,12 +37,12 @@ public class RecyclerViewTestActivity extends Activity
 			this.context = context;
 			this.items = items;
 			itemsView = (TextView) LayoutInflater.from(context).inflate(R.layout.recycle_item_view,null);
-			MyLog.log2File("创建RecycleAdapter");
+			Utils.log2File("创建RecycleAdapter");
 		}
 		@Override
 		public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup p1, int p2)
 		{
-			MyLog.log2File("创建RecycleViewHolder");
+			Utils.log2File("创建RecycleViewHolder");
 			MyViewHolder mViewHolder = new MyViewHolder(itemsView);
 			
 			return mViewHolder;
@@ -51,15 +51,15 @@ public class RecyclerViewTestActivity extends Activity
 		@Override
 		public void onBindViewHolder(RecyclerView.ViewHolder p1, int p2)
 		{
-			MyLog.log2File("Bind RecycleViewHolder");
+			Utils.log2File("Bind RecycleViewHolder");
 			((TextView)p1.itemView).setText(items.get(p2));
-			MyLog.log2File("Bind RecycleViewHolder,ViewHolder.ItemView =" + p1.itemView.toString());
+			Utils.log2File("Bind RecycleViewHolder,ViewHolder.ItemView =" + p1.itemView.toString());
 		}
 
 		@Override
 		public int getItemCount()
 		{
-			MyLog.log2File("ViewItemsSize"+items.size());
+			Utils.log2File("ViewItemsSize"+items.size());
 			return items.size();
 		}
 		class MyViewHolder extends RecyclerView.ViewHolder{

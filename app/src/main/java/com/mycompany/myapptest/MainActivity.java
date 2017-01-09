@@ -65,7 +65,7 @@ public class MainActivity extends Activity
 			
 		});
 		
-		MyLog.log2File(""+mListView.getChildCount());
+		Utils.log2File(""+mListView.getChildCount());
 	}
 
 	private void initView()
@@ -116,12 +116,12 @@ class MainListBaseAdapter extends BaseAdapter
 			convertView = new TextView(context);
 			((TextView)convertView).setText(items.get(p1));
 			((TextView)convertView).setTextSize(30);
-			MyLog.log2File("convertView为空");
+			Utils.log2File("convertView为空");
 		}
 		else
 		{
 			((TextView)convertView).setText(items.get(p1));
-			MyLog.log2File("convertView已有值");
+			Utils.log2File("convertView已有值");
 		}
 		return convertView;
 	}
